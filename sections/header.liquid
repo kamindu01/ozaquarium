@@ -1,3 +1,25 @@
+<header>
+  <div class="header-top-bar">
+    <div class="row">
+      <div class="col-md-4">
+        <h2>Wholesale Only Business</h2>
+      </div>
+      <div class="col-md-4">
+        {%- if section.settings.menu != blank -%}
+          <nav
+            class="header__inline-menu"
+            data-navigation
+            role="navigation">
+            {% render 'halo-navigation-list' 
+             , listClass: 'list-menu list-menu--inline text-left' %}
+          </nav>
+        {%- endif -%}
+      </div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+</header>
+
 {% schema %}
   {
     "name": "t:sections.header.name",
@@ -6,10 +28,10 @@
         "type": "header",
         "content": "t:sections.header.settings.header__8.content"
       }, {
-        "id": "custom_text_body",
-        "type": "richtext",
-        "label": "Add custom text below",
-        "default": "<p>Add your text here</p>"
+        "type": "link_list",
+        "id": "menu",
+        "label": "t:sections.header.settings.menu.label__1",
+        "default": "main-menu"
       }
     ]
   }
