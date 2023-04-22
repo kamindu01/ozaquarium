@@ -35,11 +35,20 @@
             "brand_image": "shopify:\/\/shop_images\/Aquaforest.webp",
             "brand_background": "shopify:\/\/shop_images\/saltwater.jpg"
           }
+        },
+        "4d8c7d5b-2e94-4db1-9612-29b1bcac3f55": {
+          "type": "link",
+          "settings": {
+            "linkurl": "https:\/\/ozaquariumdistributors.com\/",
+            "brand_image": "shopify:\/\/shop_images\/Shrimp_King-3.webp",
+            "brand_background": "shopify:\/\/shop_images\/freshwater.jpg"
+          }
         }
       },
       "block_order": [
         "c7956f16-1160-47ed-8dfb-7102932089d6",
-        "eb359f65-c992-45ae-9bb1-9f007ef1103d"
+        "eb359f65-c992-45ae-9bb1-9f007ef1103d",
+        "4d8c7d5b-2e94-4db1-9612-29b1bcac3f55"
       ],
       "settings": {
         "brands_section_title": "Brands We Import"
