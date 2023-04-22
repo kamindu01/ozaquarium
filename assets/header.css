@@ -18,6 +18,12 @@
     padding: 12px;
 }
 
-.header-middle-area{
+.header-middle-area {
     padding: 12px;
+}
+
+.header-midle-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
