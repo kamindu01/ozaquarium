@@ -1,3 +1,27 @@
+<style>
+
+  .kd-single-brand-img {
+    display: block;
+    height: 300px;
+    background-size: cover;
+    padding: 50px;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .kd-brand-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.356);
+    width: 100%;
+    height: 100%;
+  }
+</style>
+
 <div class="kd-brands-wrapper">
   <div class="kd-brands-inner container">
     <h2 class="text-center">
@@ -14,6 +38,7 @@
                   href="{{block.settings.linkurl}}"
                   class="kd-single-brand-img"
                   style="background-image: url('{{block.settings.brand_background | img_url: 'master'}}');">
+                  <div class="kd-brand-overlay"></div>
                   <img
                     src="{{block.settings.brand_image | img_url: 'master'}}"
                     alt=""
