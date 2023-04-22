@@ -1,0 +1,14 @@
+.kd-header a {
+    color: white !important;
+}
+
+.kd-header{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+    background-color: transparent;
+    padding: 40px 0;
+    transition: 0.3s;
+}
