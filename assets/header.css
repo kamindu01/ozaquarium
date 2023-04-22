@@ -1,3 +1,8 @@
+.kd-header a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
 .header-icons {
     display: flex;
     flex-flow: row;
@@ -42,11 +47,12 @@
     color: white;
 }
 
-.kd-inline-search input::placeholder{
-    color: white !important;;
+.kd-inline-search input::placeholder {
+    color: white !important;
+    ;
 }
 
-.kd-inline-search button{
+.kd-inline-search button {
     position: absolute;
     right: 0;
     height: 35px;
