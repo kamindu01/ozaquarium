@@ -45,8 +45,9 @@
     border: 1px solid white;
     font-size: 16px;
     color: white;
-    border-radius: 8px;
+    border-radius: 25px;
     background: rgba(0, 0, 0, 0.733);
+    padding: 6px 25px;
 }
 
 .kd-inline-search input::placeholder {
