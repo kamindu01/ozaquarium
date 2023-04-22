@@ -1,0 +1,68 @@
+<div class="kd-brands-wrapper">
+  <div class="kd-brands-inner container">
+    <h2 class="text-center">
+      {{ section.settings.brands_section_title }}
+    </h2>
+    <div class="brands-carousel">
+      <div class="swiper kd-brands-carousel">
+        <div class="swiper-wrapper">
+          {% for block in section.blocks %}
+            {% case block.type %}
+              {% when 'link' %}
+              <div class="swiper-slide kd-single-brand-img-wrapper">
+                <a
+                  href="{{block.settings.linkurl}}"
+                  class="kd-single-brand-img"
+                  style="background-image: url('{{block.settings.brand_background}}');">
+                  <img
+                    src="{{block.settings.brand_image}}"
+                    alt=""
+                    srcset="">
+                </a>
+              </div>
+            {% endcase %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Kd Brands Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "brands_section_title",
+        "label": "Title"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "link",
+        "name": "kd_brand",
+        "settings": [
+          {
+            "id": "linkurl",
+            "type": "url",
+            "label": "Brand Url"
+          }, {
+            "id": "brand_image",
+            "type": "image_picker",
+            "label": "Brand Image"
+          }, {
+            "id": "brand_background",
+            "type": "image_picker",
+            "label": "Brand Background"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Main Banner"
+      }
+    ]
+  }
+{% endschema %}
