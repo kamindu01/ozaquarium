@@ -34,6 +34,46 @@
     height: 100%;
     display: block;
   }
+
+  .kd-brands-inner .swiper-button-next,
+  .kd-brands-inner .swiper-button-prev {
+    position: absolute;
+    top: var(--swiper-navigation-top-offset, 50%);
+    width: calc(var(--swiper-navigation-size) / 44 * 27);
+    height: var(--swiper-navigation-size);
+    margin-top: calc(0px -(var(--swiper-navigation-size) / 2));
+    z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: var(--swiper-navigation-color,var(--swiper-theme-color)); */
+    background: #00000094;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border-radius: 50%;
+  }
+
+  .kd-brands-inner .swiper-button-next:after,
+  .kd-brands-inner .swiper-button-prev:after {
+    color: white;
+    font-size: 20px;
+  }
+
+  .kd-brands-inner .swiper-button-prev,
+  .kd-brands-inner .swiper-rtl .swiper-button-next {
+    left: var(--swiper-navigation-sides-offset, 2px);
+    right: auto;
+  }
+
+  .kd-brands-inner.swiper-button-next,
+  .kd-brands-inner .swiper-rtl .swiper-button-prev {
+    right: var(--swiper-navigation-sides-offset, 2px);
+    left: auto;
+  }
 </style>
 
 <div class="kd-brands-wrapper">
