@@ -43,12 +43,21 @@
             "brand_image": "shopify:\/\/shop_images\/Shrimp_King-3.webp",
             "brand_background": "shopify:\/\/shop_images\/freshwater.jpg"
           }
+        },
+        "2c8a1401-0a86-4cfa-8820-cda79c58c250": {
+          "type": "link",
+          "settings": {
+            "linkurl": "https:\/\/ozaquariumdistributors.com\/",
+            "brand_image": "shopify:\/\/shop_images\/Chihiros-2.webp",
+            "brand_background": "shopify:\/\/shop_images\/saltwater.jpg"
+          }
         }
       },
       "block_order": [
         "c7956f16-1160-47ed-8dfb-7102932089d6",
         "eb359f65-c992-45ae-9bb1-9f007ef1103d",
-        "4d8c7d5b-2e94-4db1-9612-29b1bcac3f55"
+        "4d8c7d5b-2e94-4db1-9612-29b1bcac3f55",
+        "2c8a1401-0a86-4cfa-8820-cda79c58c250"
       ],
       "settings": {
         "brands_section_title": "Brands We Import"
