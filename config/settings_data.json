@@ -36,7 +36,8 @@
       "header": {
         "type": "header",
         "settings": {
-          "menu": "main-menu"
+          "menu": "main-menu",
+          "logoimg": "shopify:\/\/shop_images\/Logo_Header.png"
         }
       },
       "footer": {
