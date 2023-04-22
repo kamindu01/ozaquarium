@@ -11,6 +11,16 @@
       </div>
     </div>
 
+    {% comment %} footer logo {% endcomment %}
+    <div class="kd-footer-logo-wrapper">
+      <div class="container text-center">
+        <a href="{{shop.url}}"><img
+            src="{{ section.settings.logoimg | img_url: 'master' }}"
+            alt=""
+            srcset=""></a>
+      </div>
+    </div>
+
     {% comment %} footer links {% endcomment %}
     <div class="kd-footer-links-wrapper">
       <div class="container">
@@ -47,3 +57,24 @@
 
   </div>
 </div>
+
+{% schema %}
+  {
+    "name": "footer",
+    "settings": [
+      {
+        "type": "header",
+        "content": "t:sections.header.settings.header__8.content"
+      }, {
+        "type": "link_list",
+        "id": "footer_menu",
+        "label": "Footer Menu",
+        "default": "main-menu"
+      }, {
+        "type": "image_picker",
+        "id": "logoimg",
+        "label": "Logo Image"
+      }
+    ]
+  }
+{% endschema %}
