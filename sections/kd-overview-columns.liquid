@@ -7,15 +7,17 @@
             src="{{section.settings.firsticon | img_url: 'master'}}"
             alt=""
             srcset="" />
-          <p>{{ section.settings.first_text }}</p>
+          <p>{{ section.settings.firsttext }}</p>
         </div>
       </div>
       <div class="col-md-4">
-        <img
-          src="{{section.settings.secondicon | img_url: 'master'}}"
-          alt=""
-          srcset="" />
-        <p>{{ section.settings.second_text }}</p>
+        <div class="kd-single-overview">
+          <img
+            src="{{section.settings.secondicon | img_url: 'master'}}"
+            alt=""
+            srcset="" />
+          <p>{{ section.settings.secondtext }}</p>
+        </div>
       </div>
       <div class="col-md-4"></div>
     </div>
@@ -33,17 +35,17 @@
       },
       {
         "type": "text",
-        "id": "first_text",
+        "id": "firsttext",
         "label": "First Column Text"
       },
       {
         "type": "image_picker",
-        "id": "second-icon",
+        "id": "secondicon",
         "label": "Second Column Icon"
       },
       {
         "type": "text",
-        "id": "second-text",
+        "id": "secondtext",
         "label": "Second Column Text"
       }, {
         "type": "image_picker",
