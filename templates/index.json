@@ -27,10 +27,19 @@
             "brand_image": "shopify:\/\/shop_images\/Tropical.webp",
             "brand_background": "shopify:\/\/shop_images\/freshwater.jpg"
           }
+        },
+        "eb359f65-c992-45ae-9bb1-9f007ef1103d": {
+          "type": "link",
+          "settings": {
+            "linkurl": "https:\/\/ozaquariumdistributors.com\/",
+            "brand_image": "shopify:\/\/shop_images\/Aquaforest.webp",
+            "brand_background": "shopify:\/\/shop_images\/saltwater.jpg"
+          }
         }
       },
       "block_order": [
-        "c7956f16-1160-47ed-8dfb-7102932089d6"
+        "c7956f16-1160-47ed-8dfb-7102932089d6",
+        "eb359f65-c992-45ae-9bb1-9f007ef1103d"
       ],
       "settings": {
         "brands_section_title": "Brands We Import"
