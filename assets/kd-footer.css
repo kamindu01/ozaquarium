@@ -13,6 +13,7 @@
 .kd-footer-social ul {
     display: flex;
     column-gap: 12px;
+    justify-content: center;
 }
 
 .kd-footer-social ul li {
@@ -20,7 +21,7 @@
 }
 
 .kd-footer-social ul li a {
-    font-size: 22px;
+    font-size: 30px;
     color: white;
 }
 
@@ -31,4 +32,11 @@
 .kd-footer-copyright {
     background-color: rgb(19, 19, 19);
     padding: 20px 0px;
+    color: white;
+    text-align: center;
+}
+
+.kd-footer-copyright p,
+.kd-footer-copyright a {
+    color: white !important;
 }
