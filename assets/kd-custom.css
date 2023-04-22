@@ -1,0 +1,20 @@
+p , a , span , div{
+    font-size: 16px;
+}
+.product-item>.card{
+    border: none;
+    box-shadow: 0 0 10px #0000001c;
+    margin-top: 10px;
+}
+
+.card-product{
+    padding: 10px;
+}
+
+.card-information{
+    padding: 12px !important;
+}
+
+.product-item{
+    font-size: 16px;
+}
