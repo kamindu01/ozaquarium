@@ -20,7 +20,13 @@
           <p>{{ section.settings.secondtext }}</p>
         </div>
       </div>
-      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <img
+          src="{{section.settings.thirdicon | img_url: 'master'}}"
+          alt=""
+          srcset="" />
+        <p>{{ section.settings.thirdtext }}</p>
+      </div>
     </div>
   </div>
 </div>
@@ -50,11 +56,11 @@
         "label": "Second Column Text"
       }, {
         "type": "image_picker",
-        "id": "third-icon",
+        "id": "thirdicon",
         "label": "Third Column Icon"
       }, {
         "type": "text",
-        "id": "third-text",
+        "id": "thirdtext",
         "label": "Third Column Text"
       }
     ],
