@@ -3,8 +3,11 @@
     <div class="row">
       <div class="col-md-4">
         <div class="kd-single-overview">
-          <img src="{{section.settings.firsticon | img_url: 'master'}}"alt=""srcset="">
-          <p>{{ section.settings.firsttext }}</p>
+          <img
+            src="{{section.settings.firsticon | img_url: 'master'}}"
+            alt=""
+            srcset="" />
+          <p>{{ section.settings.first_text }}</p>
         </div>
       </div>
       <div class="col-md-4"></div>
@@ -24,7 +27,7 @@
       },
       {
         "type": "text",
-        "id": "firsttext",
+        "id": "first_text",
         "label": "First Column Text"
       },
       {
