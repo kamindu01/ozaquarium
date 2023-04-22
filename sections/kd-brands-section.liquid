@@ -13,9 +13,9 @@
                 <a
                   href="{{block.settings.linkurl}}"
                   class="kd-single-brand-img"
-                  style="background-image: url('{{block.settings.brand_background}}');">
+                  style="background-image: url('{{block.settings.brand_background | img_url: 'master'}}');">
                   <img
-                    src="{{block.settings.brand_image}}"
+                    src="{{block.settings.brand_image | img_url: 'master'}}"
                     alt=""
                     srcset="">
                 </a>
