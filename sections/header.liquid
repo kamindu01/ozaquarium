@@ -1,41 +1,48 @@
 <header>
   <div class="header-top-area">
-    <div class="text-right">
-      <a href="mailto:sales@ozaquariumdistributors.com">Need Help? sales@ozaquariumdistributors.com</a>
+    <div class="container">
+      <div class="text-right">
+        <a href="mailto:sales@ozaquariumdistributors.com">Need Help? sales@ozaquariumdistributors.com</a>
+      </div>
     </div>
   </div>
 
-  <div class="header-middle-area">
-    <div class="col-md-6">
-      <img src="{{ section.settings.logoimg | img_url: 'master' }}" />
-    </div>
-    <div class="col-md-6">
-      <ul class="header-icons">
-        <li>
-          <a href="{{ shop.url }}/cart">
-            <i class="fa fa-shopping-cart"></i>
-          </a>
-        </li>
-        <li>
-          <a href="{{ shop.url }}/account">
-            <i class="fa fa-user"></i>
-          </a>
-        </li>
-      </ul>
+  <div class="header-middle-area container">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="{{ section.settings.logoimg | img_url: 'master' }}" />
+      </div>
+      <div class="col-md-6">
+        <ul class="header-icons">
+          <li>
+            <a href="{{ shop.url }}/cart">
+              <i class="fa fa-shopping-cart"></i>
+            </a>
+          </li>
+          <li>
+            <a href="{{ shop.url }}/account">
+              <i class="fa fa-user"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 
   <div class="header-bottom-area">
-    <div class="text-center">
-      {%- if section.settings.menu != blank -%}
-        <nav
-          class="header__inline-menu"
-          data-navigation
-          role="navigation">
-          {% render 'halo-navigation-list' 
-           , listClass: 'list-menu list-menu--inline text-left' %}
-        </nav>
-      {%- endif -%}
+    <div class="container">
+      <div class="text-center">
+        {%- if section.settings.menu != blank -%}
+          <nav
+            class="header__inline-menu"
+            data-navigation
+            role="navigation">
+            {% render 'halo-navigation-list' 
+             , listClass: 'list-menu list-menu--inline text-left' %}
+          </nav>
+        {%- endif -%}
+      </div>
+
     </div>
   </div>
 
