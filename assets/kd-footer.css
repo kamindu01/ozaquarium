@@ -1,5 +1,23 @@
 .kd-footer a {
     color: rgb(17, 17, 17);
-    font-size: 16px;
+    font-size: 16px !important;
     text-decoration: none;
+}
+
+.kd-footer-social{
+    background-color: rgb(19, 19, 19);
+    padding: 35px 20px;
+}
+
+.kd-footer-social ul{
+    display: flex;
+    column-gap: 12px;
+}
+
+.kd-footer-social ul li{
+    display: block;
+}
+
+.kd-footer-social ul li a{
+    font-size: 22px;
 }
