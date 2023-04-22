@@ -10,11 +10,11 @@
       "type": "kd-overview-columns",
       "settings": {
         "firsticon": "shopify:\/\/shop_images\/icn-australia.svg",
-        "first_text": "Family owned and operated since 1983",
-        "second-icon": "shopify:\/\/shop_images\/icn-thumbs-up.svg",
-        "second-text": "The best brands at low prices",
-        "third-icon": "shopify:\/\/shop_images\/icn-fish.svg",
-        "third-text": "Large range of quality products"
+        "firsttext": "",
+        "secondicon": "shopify:\/\/shop_images\/icn-thumbs-up.svg",
+        "secondtext": "",
+        "thirdicon": "shopify:\/\/shop_images\/icn-fish.svg",
+        "thirdtext": ""
       }
     },
     "1632304586ad9b5b3b": {
