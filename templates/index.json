@@ -1,33 +1,9 @@
 {
   "sections": {
-    "08a8c2d5-6d73-4da2-b4f7-434843b3e0b3": {
-      "type": "video-block",
+    "a056dccd-1e18-486a-9c88-897729f07dd9": {
+      "type": "kd-video-section",
       "settings": {
-        "container": "fullwidth",
-        "mg_top_desktop": 50,
-        "mg_top_tablet": 50,
-        "mg_top_mobile": 50,
-        "mg_bottom_desktop": 50,
-        "mg_bottom_tablet": 50,
-        "mg_bottom_mobile": 50,
-        "spotlight_bg": "#ffffff",
-        "spotlight_bg_gradient": "",
-        "video_block_title": "",
-        "color_title": "#232323",
-        "fontsize_title": 16,
-        "fontsize_title_mb": 22,
-        "margin_bottom_title": 45,
-        "video_block_des": "",
-        "color_des": "#3c3c3c",
-        "fontsize_des": 16,
-        "title_align": "center",
-        "autoplay": true,
-        "video_height": "54",
-        "style_video": "mp4",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "url_mp4": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/992af590f1924416924e5fa52165028f.mp4",
-        "description": "",
-        "full_width": false
+        "videourl": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/992af590f1924416924e5fa52165028f.mp4"
       }
     },
     "1632304586ad9b5b3b": {
@@ -561,18 +537,11 @@
         "border_width_card": 5,
         "border_color_card": "#f0f1f4"
       }
-    },
-    "a056dccd-1e18-486a-9c88-897729f07dd9": {
-      "type": "kd-video-section",
-      "settings": {
-        "videourl": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/992af590f1924416924e5fa52165028f.mp4"
-      }
     }
   },
   "order": [
-    "08a8c2d5-6d73-4da2-b4f7-434843b3e0b3",
+    "a056dccd-1e18-486a-9c88-897729f07dd9",
     "1632304586ad9b5b3b",
-    "163247026462da6862",
-    "a056dccd-1e18-486a-9c88-897729f07dd9"
+    "163247026462da6862"
   ]
 }
