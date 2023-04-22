@@ -1,5 +1,6 @@
 p , a , span , div{
     font-size: 16px;
+    text-decoration: none;
 }
 .product-item>.card{
     border: none;
