@@ -10,7 +10,7 @@
         "mg_bottom_desktop": 50,
         "mg_bottom_tablet": 50,
         "mg_bottom_mobile": 50,
-        "spotlight_bg": "#fff",
+        "spotlight_bg": "#ffffff",
         "spotlight_bg_gradient": "",
         "video_block_title": "",
         "color_title": "#232323",
@@ -561,11 +561,18 @@
         "border_width_card": 5,
         "border_color_card": "#f0f1f4"
       }
+    },
+    "a056dccd-1e18-486a-9c88-897729f07dd9": {
+      "type": "kd-video-section",
+      "settings": {
+        "videourl": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/992af590f1924416924e5fa52165028f.mp4"
+      }
     }
   },
   "order": [
     "08a8c2d5-6d73-4da2-b4f7-434843b3e0b3",
     "1632304586ad9b5b3b",
-    "163247026462da6862"
+    "163247026462da6862",
+    "a056dccd-1e18-486a-9c88-897729f07dd9"
   ]
 }
