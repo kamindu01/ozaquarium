@@ -17,6 +17,25 @@
         "thirdtext": "Large range of quality products"
       }
     },
+    "e0bc84a7-c6ed-4d24-94a6-842c16a5690f": {
+      "type": "kd-brands-section",
+      "blocks": {
+        "c7956f16-1160-47ed-8dfb-7102932089d6": {
+          "type": "link",
+          "settings": {
+            "linkurl": "https:\/\/ozaquariumdistributors.com\/",
+            "brand_image": "shopify:\/\/shop_images\/Tropical.webp",
+            "brand_background": "shopify:\/\/shop_images\/freshwater.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "c7956f16-1160-47ed-8dfb-7102932089d6"
+      ],
+      "settings": {
+        "brands_section_title": "Brands We Import"
+      }
+    },
     "1632304586ad9b5b3b": {
       "type": "brand-slider",
       "blocks": {
@@ -553,6 +572,7 @@
   "order": [
     "a056dccd-1e18-486a-9c88-897729f07dd9",
     "1580a3df-58e4-4e3f-bd75-9e118a6325c4",
+    "e0bc84a7-c6ed-4d24-94a6-842c16a5690f",
     "1632304586ad9b5b3b",
     "163247026462da6862"
   ]
