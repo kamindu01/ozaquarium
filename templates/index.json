@@ -6,6 +6,15 @@
         "videourl": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/992af590f1924416924e5fa52165028f.mp4"
       }
     },
+    "1580a3df-58e4-4e3f-bd75-9e118a6325c4": {
+      "type": "kd-overview-columns",
+      "settings": {
+        "firsticon": "shopify:\/\/shop_images\/icn-australia.svg",
+        "firsttext": "Family owned and operated since 1983",
+        "second-text": "",
+        "third-text": ""
+      }
+    },
     "1632304586ad9b5b3b": {
       "type": "brand-slider",
       "blocks": {
@@ -541,6 +550,7 @@
   },
   "order": [
     "a056dccd-1e18-486a-9c88-897729f07dd9",
+    "1580a3df-58e4-4e3f-bd75-9e118a6325c4",
     "1632304586ad9b5b3b",
     "163247026462da6862"
   ]
