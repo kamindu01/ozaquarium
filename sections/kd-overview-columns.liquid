@@ -1,0 +1,55 @@
+<div class="kd-overview-section">
+  <div class="container kd-overview-section-inner">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="kd-single-overview">
+          <img src="{{section.settings.firsticon | img_url: 'master'}}"alt=""srcset="">
+        {% comment %} <p>{{ section.settings.firsttext }}</p> {% endcomment %}
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+      <div class="col-md-4"></div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Kd Overview Columns",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "firsticon",
+        "label": "First Column Icon"
+      },
+      {
+        "type": "text",
+        "id": "firsttext",
+        "label": "First Column Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "second-icon",
+        "label": "Second Column Icon"
+      },
+      {
+        "type": "text",
+        "id": "second-text",
+        "label": "Second Column Text"
+      }, {
+        "type": "image_picker",
+        "id": "third-icon",
+        "label": "Third Column Icon"
+      }, {
+        "type": "text",
+        "id": "third-text",
+        "label": "Third Column Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Kd Overview Columns"
+      }
+    ]
+  }
+{% endschema %}
