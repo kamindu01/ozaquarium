@@ -3,7 +3,7 @@
 }
 
 .kd-header{
-    position: relative;
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
@@ -11,4 +11,5 @@
     background-color: transparent;
     padding: 40px 0;
     transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.568);
 }

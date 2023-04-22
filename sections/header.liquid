@@ -13,6 +13,17 @@
         <img src="{{ section.settings.logoimg | img_url: 'master' }}" />
       </div>
       <div class="col-md-6">
+        <div class="header-midle-right">
+          <form action="/search" class="kd-inline-search">
+            <input
+              type="search"
+              name="q"
+              placeholder="Search" />
+            <button type="submit">
+              <i class="fa fa-search"></i>
+            </button>
+          </form>
+        </div>
         <ul class="header-icons">
           <li>
             <a href="{{ shop.url }}/cart">
