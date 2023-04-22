@@ -3,7 +3,7 @@
     flex-flow: row;
     column-gap: 15px;
     justify-content: flex-end;
-    padding: 0;
+    padding: 0 !important;
 }
 
 .header-icons li {
