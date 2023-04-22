@@ -1,0 +1,19 @@
+<div class="kd-video-wrapper">
+  <video
+    src="{{section.settings.videourl}}"
+    muted
+    autoplay></video>
+</div>
+
+{% schema %}
+  {
+    "name": "kd-video-section",
+    "settings": [
+      {
+        "type": "url",
+        "id": "videourl",
+        "label": "Video Url (mp4)"
+      }
+    ]
+  }
+{% endschema %}
