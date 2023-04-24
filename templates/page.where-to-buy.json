@@ -4,9 +4,15 @@
       "type": "empty-page",
       "settings": {
       }
+    },
+    "fdf45e8c-2d6d-4a50-b2a7-bfcc5c5726ac": {
+      "type": "map-section",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "fdf45e8c-2d6d-4a50-b2a7-bfcc5c5726ac"
   ]
 }
