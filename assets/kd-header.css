@@ -1,6 +1,9 @@
 .kd-header a {
     font-size: 16px;
     text-decoration: none;
+}
+
+.kd-header{
     min-height: 204px;
 }
 
