@@ -1,0 +1,112 @@
+<div class="kd-contact-area-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h3>Contact information</h3>
+        <br>
+        <div class="conact-info-inner">
+          <h4>Address</h4>
+          <div>
+            <address>4 Archer Rd, Truganina VIC 3029</address>
+          </div>
+          <div>
+            <a href="mailto:Email: sales@ozaquariumdistributors.com">Email: sales@ozaquariumdistributors.com</a>
+          </div>
+          <div>
+            <p>Monday to Friday: 9am-6pm</p>
+            <p>please email us if you have a query outside of business hours</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <h3>Contact form</h3>
+        <div>
+          {% form 'contact' %}
+            {{ form.errors | default_errors }}
+
+            <div class="first-name">
+              <label for="first-name">First name</label>
+              <input
+                type="text"
+                name="contact[first_name]"
+                id="first-name" />
+            </div>
+
+            <div class="last-name">
+              <label for="last-name">Last name</label>
+              <input
+                type="text"
+                name="contact[last_name]"
+                id="last-name" />
+            </div>
+
+            <div class="phone">
+              <label for="phone">Phone</label>
+              <input
+                type="tel"
+                name="contact[phone]"
+                id="phone" />
+            </div>
+
+            <div class="email">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="contact[email]"
+                id="email" />
+            </div>
+
+            <div class="message">
+              <label for="message">Message</label>
+              <textarea name="contact[body]" id="message"></textarea>
+            </div>
+
+            <div class="submit">
+              <input type="submit" value="Create" />
+            </div>
+          {% endform %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Kd Brands Section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "brands_section_title",
+        "label": "Title"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "link",
+        "name": "kd_brand",
+        "settings": [
+          {
+            "id": "linkurl",
+            "type": "url",
+            "label": "Brand Url"
+          }, {
+            "id": "brand_image",
+            "type": "image_picker",
+            "label": "Brand Image"
+          }, {
+            "id": "brand_background",
+            "type": "image_picker",
+            "label": "Brand Background"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Kd Brands Section"
+      }
+    ]
+  }
+{% endschema %}
