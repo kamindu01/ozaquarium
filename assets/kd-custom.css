@@ -27,3 +27,7 @@ h3.title span{
     font-weight: 500;
     text-transform: capitalize;
 }
+
+#shopify-section-header{
+    pointer-events: all;
+}
