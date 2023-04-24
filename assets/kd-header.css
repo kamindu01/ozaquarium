@@ -8,10 +8,17 @@
     position: relative;
 }
 
+.kd-header .list-menu .dropdown:hover .kd-header .list-menu .dropdown .header__submenu{
+    opacity: 1;
+    visibility: visible;
+}
+
 .kd-header .list-menu .dropdown .header__submenu{
     position: absolute;
     background: black;
     padding: 15px;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .kd-header .list-menu .dropdown .header__submenu a span{
