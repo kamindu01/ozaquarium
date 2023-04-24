@@ -1,6 +1,7 @@
 .kd-header a {
     font-size: 16px;
     text-decoration: none;
+    min-height: 204px;
 }
 
 .header-icons {
