@@ -4,6 +4,26 @@
     color: #d9121f;
 }
 
+.kd-header .list-menu .dropdown{
+    position: relative;
+}
+
+.kd-header .list-menu .dropdown .header__submenu{
+    position: absolute;
+    background: black;
+    padding: 15px;
+}
+
+.kd-header .list-menu .dropdown .header__submenu a span{
+    font-size: 15px;
+}
+
+@media(min-width:768px){
+    .kd-header .list-menu .dropdown .header__submenu .nav-title-mobile{
+        display: none;
+    }
+}
+
 .kd-header{
     min-height: 204px;
     box-shadow: 0 5px 10px #0000000d;
