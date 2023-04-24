@@ -6,6 +6,7 @@
 
 .kd-header{
     min-height: 204px;
+    box-shadow: 0 5px 10px #0000000d;
 }
 
 .header-icons {
@@ -35,6 +36,7 @@
 
 .header-middle-area {
     padding: 12px;
+    border-bottom: 1px solid #ccc;
 }
 
 .header-midle-right {
