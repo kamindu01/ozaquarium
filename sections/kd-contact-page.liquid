@@ -74,38 +74,25 @@
 
 {% schema %}
   {
-    "name": "Kd Brands Section",
+    "name": "Kd Contact Page",
     "settings": [
       {
         "type": "text",
-        "id": "brands_section_title",
-        "label": "Title"
-      }
-    ],
-    "blocks": [
-      {
-        "type": "link",
-        "name": "kd_brand",
-        "settings": [
-          {
-            "id": "linkurl",
-            "type": "url",
-            "label": "Brand Url"
-          }, {
-            "id": "brand_image",
-            "type": "image_picker",
-            "label": "Brand Image"
-          }, {
-            "id": "brand_background",
-            "type": "image_picker",
-            "label": "Brand Background"
-          }
-        ]
+        "id": "address",
+        "label": "Address"
+      }, {
+        "type": "text",
+        "id": "email_address",
+        "label": "Email Address"
+      }, {
+        "type": "text",
+        "id": "working_hours",
+        "label": "Working Hours"
       }
     ],
     "presets": [
       {
-        "name": "Kd Brands Section"
+        "name": "Kd Contact Page"
       }
     ]
   }
