@@ -87,7 +87,7 @@
         "style_block_header": "style1",
         "pd_top_title": 30,
         "product_block_title": "New Arrivals",
-        "enable_border_title": true,
+        "enable_border_title": false,
         "enable_border_title_style2": true,
         "fontsize_title": 35,
         "fontsize_title_mb": 20,
