@@ -19,7 +19,7 @@
           "announcement-bar-0"
         ],
         "settings": {
-          "enable_announcement": true,
+          "enable_announcement": false,
           "layout": "slider",
           "arrow_active": false,
           "enable_close": true,
@@ -55,8 +55,8 @@
           "font_weight": "500",
           "icon_size": 20,
           "color_icon": "#232323",
-          "border_color": "#fff",
-          "bg_color": "#fff",
+          "border_color": "#ffffff",
+          "bg_color": "#ffffff",
           "bg_color_gradient": ""
         }
       }
