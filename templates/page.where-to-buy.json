@@ -1,0 +1,21 @@
+{
+  "sections": {
+    "main": {
+      "type": "empty-page",
+      "settings": {
+      }
+    },
+    "f5f02324-0285-4169-9b32-fc02c3261356": {
+      "type": "kd-contact-page",
+      "settings": {
+        "address": "",
+        "email_address": "",
+        "working_hours": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f5f02324-0285-4169-9b32-fc02c3261356"
+  ]
+}
