@@ -1,5 +1,9 @@
 {
   "current": {
+    "show_someone_purchase": false,
+    "show_someone_purchase_mobile": false,
+    "show_gdpr_cookie_consent": false,
+    "show_newsletter_popup": false,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
