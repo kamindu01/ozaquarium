@@ -13,3 +13,7 @@
     transition: 0.3s;
     background-color: rgba(0, 0, 0, 0.568);
 }
+
+.kd-header .list-menu .dropdown .header__submenu{
+    background: #000000bf;
+}

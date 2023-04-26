@@ -15,7 +15,7 @@
 
 .kd-header .list-menu .dropdown .header__submenu{
     position: absolute;
-    background: #000000bf;
+    background: #fff;
     padding: 15px;
     opacity: 0;
     visibility: hidden;
