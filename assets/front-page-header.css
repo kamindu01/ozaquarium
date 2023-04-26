@@ -18,6 +18,6 @@
     background: #000000bf;
 }
 
-.kd-header .icon-dropdown{
-    color: white;
+.kd-header .icon-dropdown svg{
+    fill: white;
 }
