@@ -15,10 +15,11 @@
 
 .kd-header .list-menu .dropdown .header__submenu{
     position: absolute;
-    background: black;
+    background: #000000bf;
     padding: 15px;
     opacity: 0;
     visibility: hidden;
+    min-width: 220px;
 }
 
 .kd-header .list-menu .dropdown .header__submenu a span{
