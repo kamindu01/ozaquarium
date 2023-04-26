@@ -17,3 +17,7 @@
 .kd-header .list-menu .dropdown .header__submenu{
     background: #000000bf;
 }
+
+.kd-header .icon-dropdown{
+    color: white;
+}
