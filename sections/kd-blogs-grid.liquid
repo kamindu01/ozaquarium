@@ -5,7 +5,7 @@
   {%- if blog.articles_count > 0 -%}
     <div class="kd-blog-grid-wrapper">
       <div class="kd-blog-grid-inner row">
-        {%- for article in blog.articles -%}
+        {%- for article in blog.articles limit: section.settings.post_limit -%}
           <div class="col-md-4 kd-single-blog">
             <div class="kd-singe-blog-inner">
               <a href="{{ article.url }}">
@@ -31,6 +31,8 @@
   {%- endif -%}
 </div>
 
+
+
 {%- if section.settings.show_view_all -%}
   <a href="{{ blog.url }}"class="btn"aria-label="{{ 'blogs.article.view_all_blogs' }}">
     {{ 'blogs.article.view_all' }}
@@ -47,10 +49,31 @@
         "id": "title",
         "label": "Heading",
         "default": "Learning Centre"
-      }, {
+      },
+      {
         "id": "blog",
         "type": "blog",
         "label": "Blog"
+      },
+      {
+        "type": "range",
+        "id": "post_limit",
+        "label": "Posts",
+        "min": 3,
+        "max": 12,
+        "step": 3,
+        "default": 3
+      },
+      {
+        "type": "checkbox",
+        "id": "blog_show_author",
+        "label": "Show author",
+        "default": false
+      }, {
+        "type": "checkbox",
+        "id": "blog_show_date",
+        "label": "Show date",
+        "default": true
       }, {
         "type": "checkbox",
         "id": "show_view_all",
