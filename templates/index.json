@@ -169,12 +169,24 @@
         "border_width_card": 5,
         "border_color_card": "#f0f1f4"
       }
+    },
+    "00cf9b3e-9261-4ee6-9fc2-f54ba2c90328": {
+      "type": "kd-blogs-grid",
+      "settings": {
+        "title": "Learning Centre",
+        "blog": "news",
+        "post_limit": 3,
+        "blog_show_author": false,
+        "blog_show_date": true,
+        "show_view_all": false
+      }
     }
   },
   "order": [
     "a056dccd-1e18-486a-9c88-897729f07dd9",
     "1580a3df-58e4-4e3f-bd75-9e118a6325c4",
     "e0bc84a7-c6ed-4d24-94a6-842c16a5690f",
-    "163247026462da6862"
+    "163247026462da6862",
+    "00cf9b3e-9261-4ee6-9fc2-f54ba2c90328"
   ]
 }
