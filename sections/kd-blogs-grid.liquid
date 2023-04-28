@@ -11,7 +11,7 @@
               <a href="{{ article.url }}">
                 {%- if article.image -%}
                   <div class="single-blog-img">
-                    {{ article | img_url: '150x150', scale: 2 | img_tag: '' }}
+                    {{ article | img_url: 'master', scale: 2 | img_tag: '' }}
                   </div>
                 {%- endif -%}
                 <h2 class="kd-single-blog-title">{{ article.title }}</h2>
