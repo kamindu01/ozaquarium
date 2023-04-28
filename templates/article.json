@@ -260,7 +260,7 @@
         "df6f199c-e8b4-46e7-8d3f-12e6302e295c"
       ],
       "settings": {
-        "show_breadcrumb": false,
+        "show_breadcrumb": true,
         "breadcrumb_alignment": "left",
         "breadcrumb_bg": "rgba(0,0,0,0)",
         "breadcrumb_gradient": "",
@@ -278,7 +278,7 @@
         "show_sidebar": true,
         "show_collapse": false,
         "enable_sticky": false,
-        "sidebar_layout": "layout_1",
+        "sidebar_layout": "layout_2",
         "sidebar_collapse_default": "expand",
         "sidebar_position": "left",
         "sidebar_heading_font": "font_1",
