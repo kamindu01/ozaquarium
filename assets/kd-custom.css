@@ -31,3 +31,7 @@ h3.title span{
 #shopify-section-header{
     pointer-events: all;
 }
+
+.menu-lv-item span{
+    font-size: 14px !important;
+}
