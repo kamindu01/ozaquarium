@@ -45,8 +45,8 @@ h3.title span{
         text-transform: lowercase;
     }
 
-    html body .kd-header{
-        position: relative;
+    .kd-header{
+        position: relative !important;
         background: black;
     }
 }
