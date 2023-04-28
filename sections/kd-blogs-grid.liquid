@@ -1,7 +1,7 @@
 <style>
 
   .kd-blogs-sec-wrapper {
-    color: #f8f8f8;
+    background-color: #f8f8f8;
     padding: 50px;
   }
 
@@ -9,6 +9,23 @@
     font-size: 35px;
     color: black;
     margin-bottom: 14px;
+  }
+
+  .kd-single-blog-title {
+    margin: 12px 0;
+  }
+
+  .kd-single-blog-content {
+    color: black;
+  }
+
+  .kd-load-more-btn {
+    padding: 12px 25px;
+    background: red;
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 20px;
   }
 </style>
 
@@ -50,9 +67,15 @@
 
 
 {%- if section.settings.show_view_all -%}
-  <a href="{{ blog.url }}"class="btn"aria-label="{{ 'blogs.article.view_all_blogs' }}">
-    {{ 'blogs.article.view_all' }}
-  </a>
+  <div class="text-center">
+    <a
+      href="{{ blog.url }}"
+      class="kd-load-more-btn"
+      aria-label="{{ 'blogs.article.view_all_blogs' }}">
+      View All
+    </a>
+  </div>
+
 {%- endif -%}
 
 {% schema %}
