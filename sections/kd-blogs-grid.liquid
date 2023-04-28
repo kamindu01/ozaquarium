@@ -20,9 +20,8 @@
   }
 
   .kd-load-more-btn {
-    padding: 12px 25px;
-    background: red;
-    color: white;
+    padding: 17px 38px;
+    background: linear-gradient(to right,rgb(155 0 183),rgba(0,151,160,1)) color: white;
     font-size: 16px;
     display: inline-block;
     margin-bottom: 20px;
@@ -62,21 +61,22 @@
       </div>
     {%- endif -%}
   </div>
+
+  {%- if section.settings.show_view_all -%}
+    <div class="text-center">
+      <a
+        href="{{ blog.url }}"
+        class="kd-load-more-btn"
+        aria-label="{{ 'blogs.article.view_all_blogs' }}">
+        View All
+      </a>
+    </div>
+
+  {%- endif -%}
+
 </div>
 
 
-
-{%- if section.settings.show_view_all -%}
-  <div class="text-center">
-    <a
-      href="{{ blog.url }}"
-      class="kd-load-more-btn"
-      aria-label="{{ 'blogs.article.view_all_blogs' }}">
-      View All
-    </a>
-  </div>
-
-{%- endif -%}
 
 {% schema %}
   {
