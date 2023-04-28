@@ -137,6 +137,7 @@
         },
         "2f7f02ac-4072-40ea-844f-59943e256971": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "show_block": true,
             "heading": "Custom Block",
