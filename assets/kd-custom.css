@@ -43,6 +43,7 @@ h3.title span{
     .kd-header a{
         padding: 0 8px;
         text-transform: lowercase;
+        font-size: 14px !important;
     }
 
     .kd-header{
