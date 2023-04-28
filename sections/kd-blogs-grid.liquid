@@ -1,34 +1,50 @@
-<div class="kd-blogs-sec-wrapper container">
-  <h1 class="kd-blogs-sec-title text-center">{{ section.settings.title | escape }}</h1>
-  {%- assign blog = blogs[section.settings.blog] -%}
+<style>
 
-  {%- if blog.articles_count > 0 -%}
-    <div class="kd-blog-grid-wrapper">
-      <div class="kd-blog-grid-inner row">
-        {%- for article in blog.articles limit: section.settings.post_limit -%}
-          <div class="col-md-4 kd-single-blog">
-            <div class="kd-singe-blog-inner">
-              <a href="{{ article.url }}">
-                {%- if article.image -%}
-                  <div class="single-blog-img">
-                    {{ article | img_url: 'master', scale: 2 | img_tag: '' }}
-                  </div>
-                {%- endif -%}
-                <h2 class="kd-single-blog-title">{{ article.title }}</h2>
-                <p class="kd-single-blog-content">
-                  {%- if article.excerpt.size > 0 -%}
-                    {{ article.excerpt }}
-                  {%- else -%}
-                    {{ article.content | strip_html | truncate: 150 }}
+  .kd-blogs-sec-wrapper {
+    color: #f8f8f8;
+    padding: 50px;
+  }
+
+  .kd-blogs-sec-title {
+    font-size: 35px;
+    color: black;
+    margin-bottom: 14px;
+  }
+</style>
+
+<div class="kd-blogs-sec-wrapper">
+  <div class="container">
+    <h2 class="kd-blogs-sec-title text-center">{{ section.settings.title | escape }}</h2>
+    {%- assign blog = blogs[section.settings.blog] -%}
+
+    {%- if blog.articles_count > 0 -%}
+      <div class="kd-blog-grid-wrapper">
+        <div class="kd-blog-grid-inner row">
+          {%- for article in blog.articles limit: section.settings.post_limit -%}
+            <div class="col-md-4 kd-single-blog">
+              <div class="kd-singe-blog-inner">
+                <a href="{{ article.url }}">
+                  {%- if article.image -%}
+                    <div class="single-blog-img">
+                      {{ article | img_url: 'master', scale: 2 | img_tag: '' }}
+                    </div>
                   {%- endif -%}
-                </p>
-              </a>
+                  <h2 class="kd-single-blog-title">{{ article.title }}</h2>
+                  <p class="kd-single-blog-content">
+                    {%- if article.excerpt.size > 0 -%}
+                      {{ article.excerpt }}
+                    {%- else -%}
+                      {{ article.content | strip_html | truncate: 150 }}
+                    {%- endif -%}
+                  </p>
+                </a>
+              </div>
             </div>
-          </div>
-        {%- endfor -%}
+          {%- endfor -%}
+        </div>
       </div>
-    </div>
-  {%- endif -%}
+    {%- endif -%}
+  </div>
 </div>
 
 
