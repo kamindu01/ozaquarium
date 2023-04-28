@@ -169,12 +169,19 @@
         "border_width_card": 5,
         "border_color_card": "#f0f1f4"
       }
+    },
+    "e837d4b4-6df1-4506-9143-edf9502d6e49": {
+      "type": "kd-blogs-grid",
+      "settings": {
+        "blogs_title": "Learning Centre"
+      }
     }
   },
   "order": [
     "a056dccd-1e18-486a-9c88-897729f07dd9",
     "1580a3df-58e4-4e3f-bd75-9e118a6325c4",
     "e0bc84a7-c6ed-4d24-94a6-842c16a5690f",
-    "163247026462da6862"
+    "163247026462da6862",
+    "e837d4b4-6df1-4506-9143-edf9502d6e49"
   ]
 }
