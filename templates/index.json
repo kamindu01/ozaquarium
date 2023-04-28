@@ -175,7 +175,7 @@
       "settings": {
         "title": "Learning Centre",
         "blog": "news",
-        "post_limit": 6,
+        "post_limit": 9,
         "blog_show_author": false,
         "blog_show_date": true,
         "show_view_all": true
