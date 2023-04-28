@@ -20,7 +20,27 @@ catewords: 38 %}
 </div> {% endcomment %}
 
 <div class="kd-blogs-grid-wrapper">
-  <h2 class="kd-blogs-title">{{ section.settings.blogs_title }}</h2>
+  <h2 class="kd-blogs-title text-center">{{ section.settings.blogs_title }}</h2>
+  <div class="kd-blogs-grid">
+    <div class="kd-blog-grid-inner">
+      {%- for article in blog.articles -%}
+        <div class="item">
+          {% render 'article-card-2' 
+           , article: article,
+           media_size: media_size,
+           portrait_aspect_ratio: portrait_aspect_ratio,
+           blog_text_align: blog_text_align,
+           show_author: show_author,
+           show_date: show_date,
+           show_summary: show_summary,
+           show_read_more: show_read_more,
+           show_comment: show_comment,
+           show_placeholder: show_placeholder,
+           catewords: 38 %}
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
 </div>
 
 {% schema %}
