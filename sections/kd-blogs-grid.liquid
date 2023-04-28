@@ -1,68 +1,35 @@
-<h1>{{ section.settings.title | escape }}</h1>
+<div class="kd-blogs-sec-wrapper container">
+  <h1 class="kd-blogs-sec-title text-center">{{ section.settings.title | escape }}</h1>
+  {%- assign blog = blogs[section.settings.blog] -%}
 
-{%- assign blog = blogs[section.settings.blog] -%}
-
-{%- if blog.articles_count > 0 -%}
-  <ul>
-
-    {%- for article in blog.articles limit: section.settings.post_limit -%}
-      <li>
-        <a href="{{ article.url }}">
-          {%- if article.image -%}
-            {{ article | img_url: '150x150', scale: 2 | img_tag: '' }}
-          {%- endif -%}
-          <h2>{{ article.title }}</h2>
-        </a>
-
-        {%- if section.settings.blog_show_author -%}
-          <span>
-            By {{ article.author }}
-          </span>
-        {%- endif -%}
-
-        {%- if section.settings.blog_show_date -%}
-          <span>
-            {{ article.published_at | time_tag: format: 'month_day_year' }}
-          </span>
-        {%- endif -%}
-
-        {%- if article.excerpt.size > 0 -%}
-          {{ article.excerpt }}
-        {%- else -%}
-          {{ article.content | strip_html | truncate: 150 }}
-        {%- endif -%}
-
-        {%- if article.tags.size > 0 -%}
-          <ul aria-label="{{ 'blogs.article.tags' }}">
-            {%- for tag in article.tags -%}
-              <li>
-                <a href="{{ blog.url }}/tagged/{{ tag | handle }}">{{ tag }}</a>
-              </li>
-            {%- endfor -%}
-          </ul>
-        {%- endif -%}
-
-        <ul>
-          <li>
-            <a href="{{ article.url }}" aria-label="Read more: {{ article.title }}">
-              Read more
-            </a>
-          </li>
-
-          {%- if blog.comments_enabled? and article.comments_count > 0 -%}
-            <li>
-              <a href="{{ article.url }}#comments">
-                {{ article.comments_count }} comments
+  {%- if blog.articles_count > 0 -%}
+    <div class="kd-blog-grid-wrapper">
+      <div class="kd-blog-grid-inner row">
+        {%- for article in blog.articles limit: section.settings.post_limit -%}
+          <div class="col-md-4 kd-single-blog">
+            <div class="kd-singe-blog-inner">
+              <a href="{{ article.url }}">
+                {%- if article.image -%}
+                  <div class="single-blog-img">
+                    {{ article | img_url: '150x150', scale: 2 | img_tag: '' }}
+                  </div>
+                {%- endif -%}
+                <h2 class="kd-single-blog-title">{{ article.title }}</h2>
+                <p class="kd-single-blog-content">
+                  {%- if article.excerpt.size > 0 -%}
+                    {{ article.excerpt }}
+                  {%- else -%}
+                    {{ article.content | strip_html | truncate: 150 }}
+                  {%- endif -%}
+                </p>
               </a>
-            </li>
-          {%- endif -%}
-
-        </ul>
-      </li>
-    {%- endfor -%}
-
-  </ul>
-{%- endif -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  {%- endif -%}
+</div>
 
 {%- if section.settings.show_view_all -%}
   <a href="{{ blog.url }}"class="btn"aria-label="{{ 'blogs.article.view_all_blogs' }}">
@@ -80,31 +47,10 @@
         "id": "title",
         "label": "Heading",
         "default": "Learning Centre"
-      },
-      {
+      }, {
         "id": "blog",
         "type": "blog",
         "label": "Blog"
-      },
-      {
-        "type": "range",
-        "id": "post_limit",
-        "label": "Posts",
-        "min": 3,
-        "max": 12,
-        "step": 3,
-        "default": 3
-      },
-      {
-        "type": "checkbox",
-        "id": "blog_show_author",
-        "label": "Show author",
-        "default": false
-      }, {
-        "type": "checkbox",
-        "id": "blog_show_date",
-        "label": "Show date",
-        "default": true
       }, {
         "type": "checkbox",
         "id": "show_view_all",
