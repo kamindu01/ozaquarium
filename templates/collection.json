@@ -129,6 +129,7 @@
         },
         "68de7154-5a7a-4771-9f10-096055a254d4": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "show_block": true,
             "heading": "Image",
