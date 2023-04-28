@@ -35,3 +35,15 @@ h3.title span{
 .menu-lv-item span{
     font-size: 14px !important;
 }
+
+
+/* moile styling */
+.kd-header a{
+    padding: 0 8px;
+    text-transform: lowercase;
+}
+
+.kd-header{
+    position: relative;
+    background: black;
+}
