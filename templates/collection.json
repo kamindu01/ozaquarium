@@ -107,6 +107,7 @@
         },
         "3978fd59-b580-49e1-9893-38d762f48f10": {
           "type": "product_block",
+          "disabled": true,
           "settings": {
             "show_block": true,
             "heading": "Featured Products",
