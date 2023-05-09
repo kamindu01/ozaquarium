@@ -1,6 +1,6 @@
 // brands carousel
 var swiper = new Swiper(".kd-brands-carousel", {
-    slidesPerView: 3,
+    slidesPerView: 6,
     spaceBetween: 30,
     // centeredSlides: true,
     autoplay: {
