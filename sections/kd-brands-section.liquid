@@ -11,9 +11,9 @@
 
   .kd-single-brand-img {
     display: block;
-    height: 300px;
+    /*height: 300px;*/
     background-size: cover;
-    padding: 50px;
+    padding: 10px;
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -88,10 +88,8 @@
             {% case block.type %}
               {% when 'link' %}
               <div class="swiper-slide kd-single-brand-img-wrapper">
-                <a
-                  href="{{block.settings.linkurl}}"
-                  class="kd-single-brand-img"
-                  style="background-image: url('{{block.settings.brand_background | img_url: 'master'}}');">
+                <a href="{{block.settings.linkurl}}" class="kd-single-brand-img">
+                  {% comment %} style="background-image: url('{{block.settings.brand_background | img_url: 'master'}}');" {% endcomment %}
                   <div class="kd-brand-overlay"></div>
                   <img
                     src="{{block.settings.brand_image | img_url: 'master'}}"
