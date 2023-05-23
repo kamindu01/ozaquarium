@@ -19,19 +19,13 @@
 <script>
   window.addEventListener('load', function() {
     console.log('here it comes');
-    let video = document.createElement('video')
-    video.src = "{{section.settings.videourl}}";
-    video.setAttribute("loop", "true");
-    video.setAttribute("muted", "true");
-    video.setAttribute("autoplay", "true");
-
     let videoWrapper = document.getElementById('kd-video-wrapper');
-    let imgPlaceholder = videoWrapper.querySelector('.kd-video-placeholder');
-
     console.log(video);
-    videoWrapper.insertBefore(video, imgPlaceholder)
-    imgPlaceholder.remove();
-
+    videoWrapper.innerHTML = `<video id="kd-video"
+    src="{{section.settings.videourl}}"
+    loop
+    muted
+    autoplay></video>`;
   })
 </script>
 
