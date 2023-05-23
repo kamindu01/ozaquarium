@@ -87,7 +87,7 @@
           "settings": {
             "show_block": true,
             "heading": "Brands",
-            "type": "show_all",
+            "type": "1_level",
             "link_list": ""
           }
         },
