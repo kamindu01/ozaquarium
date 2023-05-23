@@ -140,6 +140,13 @@
             "heading": "Custom Block",
             "text": "<p>Custom CMS block displayed at the left sidebar on the Catalog Page. Put your own content here: text, html, images, media... or whatever you like.<\/p>\n\n<p>There are many similar sample content placeholders across the store. All editable from admin panel.<\/p>"
           }
+        },
+        "0744bb4a-dd14-4350-bd25-760f0873bf9d": {
+          "type": "filter",
+          "settings": {
+            "heading": "Filter Title",
+            "list_tags": ""
+          }
         }
       },
       "block_order": [
@@ -149,7 +156,8 @@
         "3978fd59-b580-49e1-9893-38d762f48f10",
         "34930b49-8499-46d3-bf41-2cbb334ca73d",
         "68de7154-5a7a-4771-9f10-096055a254d4",
-        "2f7f02ac-4072-40ea-844f-59943e256971"
+        "2f7f02ac-4072-40ea-844f-59943e256971",
+        "0744bb4a-dd14-4350-bd25-760f0873bf9d"
       ],
       "settings": {
         "colors_bg": "rgba(0,0,0,0)",
