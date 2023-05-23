@@ -18,13 +18,15 @@
 
 <script>
   window.addEventListener('load', function() {
-    console.log('here it comes');
-    let videoWrapper = document.getElementById('kd-video-wrapper');
-    videoWrapper.innerHTML = `<video id="kd-video"
-    src="{{section.settings.videourl}}"
-    loop
-    muted
-    autoplay></video>`;
+    if (window.innerWidth > 768) {
+      console.log('here it comes');
+      let videoWrapper = document.getElementById('kd-video-wrapper');
+      videoWrapper.innerHTML = `<video id="kd-video"
+      src="{{section.settings.videourl}}"
+      loop
+      muted
+      autoplay></video>`;
+    }
   })
 </script>
 
