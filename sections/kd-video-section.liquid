@@ -21,11 +21,13 @@
     console.log('here it comes');
     let video = document.createElement('video')
     video.src = "{{section.settings.videourl}}";
-    video.setAttribute("loop" = "true");
+    video.setAttribute("loop", "true");
     video.setAttribute("muted", "true");
     video.setAttribute("autoplay", "true");
 
     console.log(video);
+    document.getElementById('kd-video-wrapper').innerHTML = video;
+
   })
 </script>
 
