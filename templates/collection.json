@@ -86,8 +86,8 @@
           "type": "category",
           "settings": {
             "show_block": true,
-            "heading": "Categories",
-            "type": "3_level",
+            "heading": "Brands",
+            "type": "show_all",
             "link_list": ""
           }
         },
