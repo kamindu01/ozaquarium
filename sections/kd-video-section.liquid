@@ -7,13 +7,31 @@
 </style>
 
 
-<div class="kd-video-wrapper">
-  <video
-    src="{{section.settings.videourl}}"
-    loop
-    muted
-    autoplay></video>
-</div>
+<div class="kd-video-wrapper" id="kd-video-wrapper">
+  <img class="kd-video-placeholder"
+    src="{{section.settings.placeholder}}"
+    alt="">
+{% comment %} <video id="kd-video"
+src="{{section.settings.videourl}}"
+loop
+muted
+autoplay></video> {% endcomment %}</div>
+
+<script>
+  window.addEventListener('load', () => {
+    console.log('here it comes')
+    let video = document.createElement('video')
+    video.src = "{{section.settings.videourl}}"
+    video.setAttribute("loop" = "true");
+    video
+      .setAttribute("muted", "true")
+      video
+      .setAttribute("autoplay", "true")
+      document
+      .getElementById('kd-video-wrapper')
+      .innerHTML = video;
+  })
+</script>
 
 {% schema %}
   {
@@ -23,6 +41,10 @@
         "type": "url",
         "id": "videourl",
         "label": "Video Url"
+      }, {
+        "type": "url",
+        "id": "placeholder",
+        "label": "Image Placeholder"
       }
     ],
     "presets": [
