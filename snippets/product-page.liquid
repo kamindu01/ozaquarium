@@ -1025,7 +1025,7 @@
                                     {%- when 'quantity_selector' -%}
                                         {% unless has_product_combo %}
                                             {%- if check_show_qty == 'show_qty_1' -%}
-                                                <div class="productView-moreItem"
+                                                <div data-spark="b2c-only" class="productView-moreItem"
                                                     style="--spacing-top: {{ spacing_top | append: 'px' }};
                                                     --spacing-bottom: {{ spacing_bottom | append: 'px' }}"
                                                 >
@@ -1048,7 +1048,7 @@
                                         {% endunless %}
                                     {%- when 'buy_buttons' -%}
                                         {% unless has_product_combo %}
-                                            <div class="productView-moreItem"
+                                            <div data-spark="b2c-only" class="productView-moreItem"
                                                 style="--spacing-top: {{ spacing_top | append: 'px' }};
                                                 --spacing-bottom: {{ spacing_bottom | append: 'px' }}"
                                             >
