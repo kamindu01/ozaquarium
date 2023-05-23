@@ -208,7 +208,7 @@
                 %}
               
                 {%- if show_price -%}
-                    <div class="card-price">
+                    <div data-spark="b2c-only" class="card-price">
                         {% render 'price',
                             product: product_card_product,
                             price_class: '',
