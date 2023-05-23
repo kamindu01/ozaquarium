@@ -3,7 +3,8 @@
     "a056dccd-1e18-486a-9c88-897729f07dd9": {
       "type": "kd-video-section",
       "settings": {
-        "videourl": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/992af590f1924416924e5fa52165028f.mp4"
+        "videourl": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/992af590f1924416924e5fa52165028f.mp4",
+        "placeholder": "https:\/\/cdn.shopify.com\/s\/files\/1\/0744\/8277\/8393\/files\/video-placeholder.jpg?v=1684816600"
       }
     },
     "1580a3df-58e4-4e3f-bd75-9e118a6325c4": {
