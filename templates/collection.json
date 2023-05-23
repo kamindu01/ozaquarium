@@ -138,11 +138,10 @@
         },
         "2f7f02ac-4072-40ea-844f-59943e256971": {
           "type": "text",
-          "disabled": true,
           "settings": {
             "show_block": true,
-            "heading": "Custom Block",
-            "text": "<p>Custom CMS block displayed at the left sidebar on the Catalog Page. Put your own content here: text, html, images, media... or whatever you like.<\/p>\n\n<p>There are many similar sample content placeholders across the store. All editable from admin panel.<\/p>"
+            "heading": "",
+            "text": "<form action=\"\/search\" class=\"kd-inline-search\">\n            <input type=\"search\" name=\"q\" placeholder=\"Search\">\n            <button type=\"submit\">\n              <i class=\"fa fa-search\"><\/i>\n            <\/button>\n          <\/form>"
           }
         }
       },
