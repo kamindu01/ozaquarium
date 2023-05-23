@@ -82,6 +82,14 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "blocks": {
+        "2f7f02ac-4072-40ea-844f-59943e256971": {
+          "type": "text",
+          "settings": {
+            "show_block": true,
+            "heading": "Search",
+            "text": "<form action=\"\/search\" class=\"kd-sidebar-search\">\n            <input type=\"search\" name=\"q\" placeholder=\"Search\">\n            <button type=\"submit\">\n              <i class=\"fa fa-search\"><\/i>\n            <\/button>\n          <\/form>"
+          }
+        },
         "80b0a11c-fb01-4b89-8a29-1dbb2a1db16a": {
           "type": "category",
           "settings": {
@@ -135,24 +143,16 @@
             "heading": "Image",
             "link": ""
           }
-        },
-        "2f7f02ac-4072-40ea-844f-59943e256971": {
-          "type": "text",
-          "settings": {
-            "show_block": true,
-            "heading": "",
-            "text": "<form action=\"\/search\" class=\"kd-inline-search\">\n            <input type=\"search\" name=\"q\" placeholder=\"Search\">\n            <button type=\"submit\">\n              <i class=\"fa fa-search\"><\/i>\n            <\/button>\n          <\/form>"
-          }
         }
       },
       "block_order": [
+        "2f7f02ac-4072-40ea-844f-59943e256971",
         "80b0a11c-fb01-4b89-8a29-1dbb2a1db16a",
         "ce351101-2c54-4627-b740-b2c592067b4a",
         "6684d566-6940-4457-9cf9-f1a8a6e80573",
         "3978fd59-b580-49e1-9893-38d762f48f10",
         "34930b49-8499-46d3-bf41-2cbb334ca73d",
-        "68de7154-5a7a-4771-9f10-096055a254d4",
-        "2f7f02ac-4072-40ea-844f-59943e256971"
+        "68de7154-5a7a-4771-9f10-096055a254d4"
       ],
       "settings": {
         "colors_bg": "rgba(0,0,0,0)",
