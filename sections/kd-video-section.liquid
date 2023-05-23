@@ -22,13 +22,9 @@
     let video = document.createElement('video')
     video.src = "{{section.settings.videourl}}"
     video.setAttribute("loop" = "true");
-    video
-      .setAttribute("muted", "true")
-      video
-      .setAttribute("autoplay", "true")
-      document
-      .getElementById('kd-video-wrapper')
-      .innerHTML = video;
+    video.setAttribute("muted", "true");
+    video.setAttribute("autoplay", "true");
+    document.getElementById('kd-video-wrapper').innerHTML = video;
   })
 </script>
 
