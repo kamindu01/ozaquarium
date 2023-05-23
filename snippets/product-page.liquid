@@ -906,6 +906,7 @@
                                                 %}
                                             </div>
                                         {%- endif -%}
+                                  <spark-pdp parent-id="{{ product.id }}"></spark-pdp>
                                     {%- when 'price' -%}
                                         {% assign fontsize_text = block.settings.fontsize_text %}
                                         <div class="productView-moreItem"
@@ -929,7 +930,8 @@
                                                     </span>
                                                 </div>
                                             {% else %}
-                                                <div class="productView-price no-js-hidden clearfix" id="product-price-{{ product.id }}">
+                                              
+                                                <div data-spark="b2c-only" class="productView-price no-js-hidden clearfix" id="product-price-{{ product.id }}">
                                                     {%- render 'price',
                                                         product: product,
                                                         use_variant: true,
@@ -964,7 +966,7 @@
                                         {%- endif -%}
                                     {%- when 'variant_picker' -%}
                                         {% unless has_product_combo %}
-                                            <div class="productView-moreItem"
+                                            <div data-spark="b2c-only" class="productView-moreItem"
                                                 style="--spacing-top: {{ spacing_top | append: 'px' }};
                                                 --spacing-bottom: {{ spacing_bottom | append: 'px' }}"
                                             >
@@ -980,7 +982,7 @@
                                         {% endunless %}
                                     {%- when 'customization_property' -%}
                                         {% if has_customization_option == true %}
-                                            <div class="productView-moreItem"
+                                            <div data-spark="b2c-only" class="productView-moreItem"
                                                 style="--spacing-top: {{ spacing_top | append: 'px' }};
                                                 --spacing-bottom: {{ spacing_bottom | append: 'px' }}"
                                             >
