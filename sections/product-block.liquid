@@ -883,6 +883,9 @@
     }
 </style>
 
+{% if settings.is_show_for_logged_in %}
+    only for logged in
+{% endif %}
 
 {% if settings.banner_animation == 'effect_1' %}<animated-component>{% endif %}
     <div class="product-block section-block-{{section.id}}" style="--grid-gap: {{ grid_gap }}">
