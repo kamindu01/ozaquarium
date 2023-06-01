@@ -1,4 +1,4 @@
-<header class="kd-header">
+<header class="kd-header" style="background: url({{ section.settings.backgroundimg | img_url: 'master' }});">
   <div class="header-top-area">
     <div class="container">
       <div class="text-right">
@@ -78,6 +78,10 @@
         "type": "image_picker",
         "id": "logoimg",
         "label": "Logo Image"
+      }, {
+        "type": "image_picker",
+        "id": "backgroundimg",
+        "label": "Background Image"
       }
     ]
   }
