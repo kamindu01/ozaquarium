@@ -2,7 +2,6 @@
 
   .kd-brands-inner {
     padding: 50px 20px;
-    background-color: rgba(0, 0, 0, 0.568);
   }
 
   .kd-brands-inner h2 {
@@ -79,10 +78,23 @@
   .kd-brands-wrapper {
     background-size: cover !important;
     background-position: center !important;
+    position: relative;
+  }
+
+  .brands-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.568);
+    display: block !important;
   }
 </style>
 
 <div class="kd-brands-wrapper" style="background-image: url({{section.settings.brands_section_Background | img_url: 'master' }});">
+  <div class="brands-overlay"></div>
+
   <div class="kd-brands-inner container">
     {% comment %} <h2 class="text-center">
     {{ section.settings.brands_section_title }}
