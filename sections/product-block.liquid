@@ -883,6 +883,7 @@
     }
 </style>
 
+
 {% if settings.banner_animation == 'effect_1' %}<animated-component>{% endif %}
     <div class="product-block section-block-{{section.id}}" style="--grid-gap: {{ grid_gap }}">
         {%- if block_title != blank -%}
@@ -1256,6 +1257,11 @@
     {
         "type": "header",
         "content": "t:sections.layout.content"
+    },
+    {
+        "type": "checkbox",
+        "id" : "is_show_for_logged_in",
+        "label": "Only Show for logged in Users?"
     },
     {
         "type": "select",
