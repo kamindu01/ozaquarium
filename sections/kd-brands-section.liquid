@@ -76,11 +76,11 @@
   }
 </style>
 
-<div class="kd-brands-wrapper">
+<div class="kd-brands-wrapper" style="background-image: url({{section.settings.brands_section_Background | img_url: 'master' }});">
   <div class="kd-brands-inner container">
-    <h2 class="text-center">
-      {{ section.settings.brands_section_title }}
-    </h2>
+    {% comment %} <h2 class="text-center">
+    {{ section.settings.brands_section_title }}
+    </h2> {% endcomment %}
     <div class="brands-carousel">
       <div class="swiper kd-brands-carousel">
         <div class="swiper-wrapper">
@@ -115,6 +115,10 @@
         "type": "text",
         "id": "brands_section_title",
         "label": "Title"
+      }, {
+        "type": "image_picker",
+        "id": "brands_section_Background",
+        "label": "Brands section background"
       }
     ],
     "blocks": [
