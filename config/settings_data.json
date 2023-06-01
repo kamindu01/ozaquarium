@@ -41,7 +41,8 @@
         "type": "header",
         "settings": {
           "menu": "main-menu",
-          "logoimg": "shopify:\/\/shop_images\/Logo_Header.png"
+          "logoimg": "shopify:\/\/shop_images\/Logo_Header.png",
+          "backgroundimg": "shopify:\/\/shop_images\/video-placeholder.jpg"
         }
       },
       "footer": {
