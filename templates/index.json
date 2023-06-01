@@ -477,16 +477,35 @@
             "brand_image": "shopify:\/\/shop_images\/Chihiros-2.webp",
             "brand_background": "shopify:\/\/shop_images\/saltwater.jpg"
           }
+        },
+        "f0bd3735-06ce-48bb-8fb7-0db219215fc1": {
+          "type": "link",
+          "settings": {
+            "linkurl": "https:\/\/ozaquariumdistributors.com\/",
+            "brand_image": "shopify:\/\/shop_images\/Chihiros-2.webp",
+            "brand_background": "shopify:\/\/shop_images\/saltwater.jpg"
+          }
+        },
+        "e26e9491-f189-499e-a65f-47f8e570032a": {
+          "type": "link",
+          "settings": {
+            "linkurl": "https:\/\/ozaquariumdistributors.com\/",
+            "brand_image": "shopify:\/\/shop_images\/Chihiros-2.webp",
+            "brand_background": "shopify:\/\/shop_images\/saltwater.jpg"
+          }
         }
       },
       "block_order": [
         "c7956f16-1160-47ed-8dfb-7102932089d6",
         "eb359f65-c992-45ae-9bb1-9f007ef1103d",
         "4d8c7d5b-2e94-4db1-9612-29b1bcac3f55",
-        "2c8a1401-0a86-4cfa-8820-cda79c58c250"
+        "2c8a1401-0a86-4cfa-8820-cda79c58c250",
+        "f0bd3735-06ce-48bb-8fb7-0db219215fc1",
+        "e26e9491-f189-499e-a65f-47f8e570032a"
       ],
       "settings": {
-        "brands_section_title": "Brands We Import"
+        "brands_section_title": "Brands We Import",
+        "brands_section_Background": "shopify:\/\/shop_images\/video-placeholder.jpg"
       }
     },
     "163247026462da6862": {
