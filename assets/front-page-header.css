@@ -11,6 +11,20 @@
     background-color: transparent;
     padding: 0px;
     transition: 0.3s;
+    background-size: cover;
+    background-position: center;
+}
+
+.kd-header .header-inner{
+    position: relative;
+}
+
+.header-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.568);
 }
 
