@@ -885,7 +885,7 @@
 
 {% if section.settings.is_loggedin %}
     {% if customer %}
-{% if settings.banner_animation == 'effect_1' %}<animated-component>{% endif %}
+      {% if settings.banner_animation == 'effect_1' %}<animated-component>{% endif %}
     <div class="product-block section-block-{{section.id}}" style="--grid-gap: {{ grid_gap }}">
         {%- if block_title != blank -%}
             {%- if section.settings.style_block_header == 'style3' or section.settings.style_block_header == 'style4' -%}
@@ -1250,6 +1250,7 @@
     </script>
 {%- endif -%}
     {% endif %}
+    {% else %}
 {% if settings.banner_animation == 'effect_1' %}<animated-component>{% endif %}
     <div class="product-block section-block-{{section.id}}" style="--grid-gap: {{ grid_gap }}">
         {%- if block_title != blank -%}
