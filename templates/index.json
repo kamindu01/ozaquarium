@@ -511,7 +511,7 @@
     "163247026462da6862": {
       "type": "product-block",
       "settings": {
-        "is_show_for_logged_in": true,
+        "is_show_for_logged_in": false,
         "container": "container",
         "padding_full_width": 0,
         "disable_padding_content": false,
