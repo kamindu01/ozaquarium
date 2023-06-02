@@ -511,7 +511,6 @@
     "163247026462da6862": {
       "type": "product-block",
       "settings": {
-        "is_show_for_logged_in": true,
         "container": "container",
         "padding_full_width": 0,
         "disable_padding_content": false,
@@ -626,6 +625,12 @@
         "blog_show_date": true,
         "show_view_all": true
       }
+    },
+    "ead3b572-43c0-47bb-ab11-f783d196bac2": {
+      "type": "kd-products",
+      "settings": {
+        "products_section_title": "Specials"
+      }
     }
   },
   "order": [
@@ -633,6 +638,7 @@
     "a056dccd-1e18-486a-9c88-897729f07dd9",
     "e0bc84a7-c6ed-4d24-94a6-842c16a5690f",
     "163247026462da6862",
-    "f0ca6e05-6083-405a-adf0-21a727a9dcda"
+    "f0ca6e05-6083-405a-adf0-21a727a9dcda",
+    "ead3b572-43c0-47bb-ab11-f783d196bac2"
   ]
 }
