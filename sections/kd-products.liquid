@@ -1,3 +1,9 @@
+<div class="kd-products-carousel-wrapper">
+  {% if section.settings.is_loggedin %}
+    logged in checked
+  {% endif %}
+</div>
+
 {% schema %}
   {
     "name": "Kd Products Section",
@@ -6,6 +12,10 @@
         "type": "text",
         "id": "products_section_title",
         "label": "Title"
+      }, {
+        "type": "checkbox",
+        "id": "is_loggedin",
+        "label": "Only show for logged in users?"
       }
     ],
     "presets": [
