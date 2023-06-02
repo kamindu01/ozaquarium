@@ -883,15 +883,6 @@
     }
 </style>
 
-{% if section.settings.is_logged_in %}
-    {% if %customer% %}
-        logged in cutomer
-    {% endif %}
-{% else %}
-    not checked
-{% endif %}
-
-
 {% if settings.banner_animation == 'effect_1' %}<animated-component>{% endif %}
     <div class="product-block section-block-{{section.id}}" style="--grid-gap: {{ grid_gap }}">
         {%- if block_title != blank -%}
@@ -1262,11 +1253,6 @@
     "name": "t:sections.product_block.name",
     "class": "sections-product-block",
     "settings": [
-        {
-        "type": "checkbox",
-        "id": "is_logged_in",
-        "label": "Only Show for logged in users"
-    },
     {
         "type": "header",
         "content": "t:sections.layout.content"
