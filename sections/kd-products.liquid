@@ -1,6 +1,8 @@
 <div class="kd-products-carousel-wrapper">
   {% if section.settings.is_loggedin %}
-    logged in checked
+    {% if %customer %}
+      customer logged in
+    {% endif %}
   {% endif %}
 </div>
 
