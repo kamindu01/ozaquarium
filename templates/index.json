@@ -629,7 +629,8 @@
     "ead3b572-43c0-47bb-ab11-f783d196bac2": {
       "type": "kd-products",
       "settings": {
-        "products_section_title": "Specials"
+        "products_section_title": "Specials",
+        "is_loggedin": true
       }
     }
   },
