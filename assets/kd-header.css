@@ -1,7 +1,8 @@
 .kd-header a {
     font-size: 16px;
     text-decoration: none;
-    color: #d9121f;
+    /* color: #d9121f; */
+    color: white;
     padding: 10px 12px !important;
 }
 
