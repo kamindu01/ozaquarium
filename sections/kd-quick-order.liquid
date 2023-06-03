@@ -1,4 +1,4 @@
-{% paginate collection.products by 12 %}
+{% paginate collections["all-products"].products by 12 %}
   {% for product in collection.products %}
 
     <span>{{ product.title }}</span>
