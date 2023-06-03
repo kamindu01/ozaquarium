@@ -1,13 +1,37 @@
+<style>
+  .single-product-inner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .single-product-inner .prod-title img {
+    max-width: 200px;
+  }
+</style>
+
 <div class="quick-order-section-wrapper">
   <h2 class="quick-order-title">{{ section.settings.Kd_quick_order_title }}</h2>
-
   <div class="pagination-wrapper">
-    {% paginate collections.all.products by 12 %}
+    {% paginate collections.all.products by 30 %}
       {% for product in collections.all.products %}
         <div class="single-product">
           <div class="single-product-inner">
-            <div>
+            <div class="prod-img">
               <img src="{{product.featured_image | img_url: 'master'}}" alt="">
+            </div>
+            <div class="prod-title">
+              <h2>{{ product.title }}</h2>
+            </div>
+            <div class="prod-button">
+              {% if customer %}
+                {% if product.options.size > 0 -%}
+                  <button>Show Options</button>
+                {% else %}
+                  <button>Purchase</button>
+                {%- endif %}
+              {% endif %}
             </div>
           </div>
         </div>
