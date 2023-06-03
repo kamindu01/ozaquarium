@@ -38,14 +38,14 @@
             placeholder="Search"
             class="search-input">
         </div>
-        <div class="category-filter">
-          <select name="" id="select-collection">
-            {% for collection in collections %}
-              <option value={{collection.id}}>{{ collection.title }}</option>
-            {% endfor %}
+        {% comment %} <div class="category-filter">
+        <select name="" id="select-collection">
+        {% for collection in collections %}
+        <option value={{collection.id}}>{{ collection.title }}</option>
+        {% endfor %}
 
-          </select>
-        </div>
+        </select>
+        </div> {% endcomment %}
       </div>
       <div class="pagination-links-wrapper top">
         {{ paginate | default_pagination }}
@@ -67,12 +67,23 @@
               {% for collection in product.collections %}
                 {{ collection }}
               {% endfor %}
-              <div class="prod-img">
+              <div
+                class="prod-img">
                 <img src="{{product.featured_image | img_url: 'small'}}" alt="">
               </div>
               <div class="prod-title">
                 <h2>{{ product.title }}</h2>
               </div>
+
+              <div class="options">
+                {% if product.variants.size > 0 %}
+                  {% for varient in product.variants %}
+                    varient.title
+                  {% endfor %}
+                {% endif %}
+              </div>
+
+
               {% comment %} product opions {% endcomment %}
               {%- unless product.has_only_default_variant -%}
                 <div class="prod-options">
@@ -120,7 +131,7 @@
               {% comment %} product options {% endcomment %}
 
               <div class="prod-button">
-                <button>Purchase</button>
+                <button onclick="add_product_to_cart()">Add to cart</button>
               </div>
             </div>
           </div>
