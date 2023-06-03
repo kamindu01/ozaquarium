@@ -2,8 +2,12 @@
   .single-product-inner {
     display: flex;
     flex-flow: row wrap;
-    justify-content: center;
     align-items: center;
+    background: white;
+    box-shadow: 0 0 5px #00000024;
+    margin-bottom: 20px;
+    padding: 8px;
+    max-width: 100%;
   }
 
   .single-product-inner .prod-title img {
@@ -34,6 +38,13 @@
               {% endif %}
             </div>
           </div>
+          {% if product.options.size > 0 -%}
+            <div class="single-product-options hidden">
+              {% for option in product.options -%}
+                - {{ option }}
+              {%- endfor %}
+            </div>
+          {%- endif %}
         </div>
       {% endfor %}
       {{ paginate | default_pagination }}
