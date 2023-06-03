@@ -149,6 +149,10 @@
 
 <script>
 
+  let varients = [];{% if product.variants.size > 0 %}
+    {% for varient in product.variants %}varients.push({val: {{varient.id}}, title: {{ varient.title }}}){% endfor %}
+  {% endif %}
+
   const selectProductption = (e) => {
     e.preventDefault();
     let selectedVal = e.target.value;
@@ -174,7 +178,8 @@
       .children[0]
     console
     .log(varientSelector)
-}
+  console
+  .log(varients)}
 </script>
 
 {% schema %}
