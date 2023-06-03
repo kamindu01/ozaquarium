@@ -1,7 +1,7 @@
-{% paginate collection.products by 30 %}
+{% paginate collections.all.products by 30 %}
   <div id="product-grid" class="grid m30">
     {%- liquid
-         for product in collection.products
+         for product in collections.all.products
             assign can_purchase = false
             if product.available
                assign can_purchase = true
