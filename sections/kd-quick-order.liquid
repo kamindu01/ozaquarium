@@ -203,7 +203,11 @@
     let varientName = '';
 
     console.log(e.target)
-    let selects = e.target.parentElement.querySelectorAll('select');
+    let selects = e
+      .target
+      .parentElement
+      .parentElement
+      .querySelectorAll('select');
     selects
       .forEach((slect, key) => {
         if (key == 0) {
