@@ -37,6 +37,10 @@
   .prod-button {
     width: 20%;
   }
+
+  .single-selct {
+    padding: 0 6px;
+  }
 </style>
 
 <div class="quick-order-section-wrapper">
@@ -44,7 +48,8 @@
     <h2 class="quick-order-title">{{ section.settings.Kd_quick_order_title }}</h2>
 
     <div class="filters-and-pagination">
-      <div class="search-and-filter">
+      <div
+        class="search-and-filter">
         <div class="search">
           <input
             type="text"
@@ -121,19 +126,21 @@
                             {%- endfor -%}
                           </fieldset>
                         {%- else -%}
-                          <label for="ProductSelect-option-{{ forloop.index0 }}">
-                            {{ option.name | escape }}
-                          </label>
-                          <select
-                            onchange="selectProductption(event)"
-                            id="ProductSelect-{{ forloop.index0 }}"
-                            data-index="option{{ forloop.index }}">
-                            {%- for value in option.values -%}
-                              <option value="{{ value | escape }}"{% if option.selected_value == value %}selected="selected"{% endif %}>
-                                {{ value | escape }}
-                              </option>
-                            {%- endfor -%}
-                          </select>
+                          <div class="single-selct">
+                            <label for="ProductSelect-option-{{ forloop.index0 }}">
+                              {{ option.name | escape }}
+                            </label>
+                            <select
+                              onchange="selectProductption(event)"
+                              id="ProductSelect-{{ forloop.index0 }}"
+                              data-index="option{{ forloop.index }}">
+                              {%- for value in option.values -%}
+                                <option value="{{ value | escape }}"{% if option.selected_value == value %}selected="selected"{% endif %}>
+                                  {{ value | escape }}
+                                </option>
+                              {%- endfor -%}
+                            </select>
+                          </div>
                         {%- endif -%}
 
                       {%- endfor -%}
