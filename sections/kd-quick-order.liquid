@@ -77,9 +77,12 @@
 
               <div class="options">
                 {% if product.variants.size > 0 %}
-                  {% for varient in product.variants %}
-                    {{ varient.title }}
-                  {% endfor %}
+                  <select name="" id="product-varient">
+                    {% for varient in product.variants %}
+                      <option value="{{varient.id}}">{{ varient.title }}</option>
+                    {% endfor %}
+                  </select>
+
                 {% endif %}
               </div>
 
