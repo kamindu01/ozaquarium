@@ -31,22 +31,25 @@
     <h2 class="quick-order-title">{{ section.settings.Kd_quick_order_title }}</h2>
 
     <div class="filters-and-pagination">
-        <div class="search-and-filter">
-            <div class="search">
-                <input type="text" placeholder="Search" class="search-input">
-            </div>
-            <div class="category-filter">
-                <select name="" id="select-collection">
-                    {% for collection in collections %}
-                        <option value={collection.id}>{collection.title}</option>
-                    {%  endfor %}
+      <div class="search-and-filter">
+        <div class="search">
+          <input
+            type="text"
+            placeholder="Search"
+            class="search-input">
+        </div>
+        <div class="category-filter">
+          <select name="" id="select-collection">
+            {% for collection in collections %}
+              <option value={{collection.id}}>{{ collection.title }}</option>
+            {% endfor %}
 
-                </select>
-            </div>
+          </select>
         </div>
-        <div class="pagination-links-wrapper top">
-            {{ paginate | default_pagination }}
-        </div>
+      </div>
+      <div class="pagination-links-wrapper top">
+        {{ paginate | default_pagination }}
+      </div>
     </div>
 
 
@@ -115,7 +118,7 @@
         {% endfor %}
 
         <div class="pagination-links-wrapper bottom">
-            {{ paginate | default_pagination }}
+          {{ paginate | default_pagination }}
         </div>
       {% endpaginate %}
     </div>
