@@ -1,9 +1,21 @@
-{% paginate collections.all.products by 12 %}
-  {% for product in collections.all.products %}
-    ...
-  {% endfor %}
-  {{ paginate | default_pagination }}
-{% endpaginate %}
+<div class="quick-order-section-wrapper">
+  <h2 class="quick-order-title">{{ section.settings.Kd_quick_order_title }}</h2>
+
+  <div class="pagination-wrapper">
+    {% paginate collections.all.products by 12 %}
+      {% for product in collections.all.products %}
+        <div class="single-product">
+          <div class="single-product-inner">
+            <div>
+              <img src="{{product.featured_image | img_url: 'master'}}" alt="">
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      {{ paginate | default_pagination }}
+    {% endpaginate %}
+  </div>
+</div>
 
 {% schema %}
   {
