@@ -173,7 +173,7 @@
                 </div>
               </div>
 
-              <div class="quantity">
+              <div class="quantity-wrapper">
                 <label for="">Quentity</label>
                 <input
                   type="number"
@@ -249,6 +249,32 @@ const add_product_to_cart = (e) => {
 
   console.log(varientSelect)
   console.log(quantityWrapper)
+
+  let productId = varientSelect.value;
+  let quantity = quantityWrapper.value;
+
+  console.log(productId, quantity)
+
+  let formData = {
+    'items': [
+      {
+        'id': productId,
+        'quantity': quantity
+      }
+    ]
+  };
+  fetch(window.Shopify.routes.root + 'cart/add.js', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(formData)
+  }).then(response => {
+    return response.json();
+  }).catch((error) => {
+    console.error('Error:', error);
+  });
+
 }
 </script>
 
