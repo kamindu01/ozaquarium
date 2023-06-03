@@ -75,13 +75,13 @@
             {% comment %} product options {% endcomment %}
 
             <div class="prod-button">
-              {% if customer %}
-                {% if product.options.size > 0 -%}
-                  <button>Show Options</button>
-                {% else %}
-                  <button>Purchase</button>
-                {%- endif %}
-              {% endif %}
+              {% comment %} {% if customer %} {% endcomment %}
+              {% if product.options.size > 0 -%}
+                <button>Show Options</button>
+              {% else %}
+                <button>Purchase</button>
+              {%- endif %}
+              {% comment %} {% endif %} {% endcomment %}
             </div>
           </div>
         </div>
