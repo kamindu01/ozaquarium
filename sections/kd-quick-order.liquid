@@ -28,6 +28,14 @@
   .prod-img {
     width: 15%;
   }
+
+  .prod-title {
+    width: 60%;
+  }
+
+  .prod-button {
+    width: 25%;
+  }
 </style>
 
 <div class="quick-order-section-wrapper">
@@ -51,7 +59,8 @@
         </select>
         </div> {% endcomment %}
       </div>
-      <div class="pagination-links-wrapper top">
+      <div
+        class="pagination-links-wrapper top">
         {{ paginate | default_pagination }}
       </div>
     </div>
