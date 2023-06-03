@@ -41,7 +41,8 @@
           {% if product.options_with_values.size > 0 -%}
             <div class="single-product-options hidden">
               {% for option in product.options_with_values -%}
-                - {{ option }}
+                - {{ option.name }}
+                - {{ option.value }}
               {%- endfor %}
             </div>
           {%- endif %}
