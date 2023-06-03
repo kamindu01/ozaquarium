@@ -244,6 +244,7 @@
 
 const add_product_to_cart = (e) => {
   e.preventDefault();
+  e.target.textContent = "Adding ...";
   console.log(e
     .target
     .parentElement
@@ -283,6 +284,10 @@ const add_product_to_cart = (e) => {
     return response.json();
   }).then(json => {
     console.log(json)
+    if (json.items) {
+      e.target.textContent = "Item Added";
+
+    }
   }).catch((error) => {
     console.error('Error:', error);
   });
