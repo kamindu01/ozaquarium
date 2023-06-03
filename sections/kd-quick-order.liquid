@@ -38,9 +38,9 @@
               {% endif %}
             </div>
           </div>
-          {% if product.options.size > 0 -%}
+          {% if product.options_with_values.size > 0 -%}
             <div class="single-product-options hidden">
-              {% for option in product.options -%}
+              {% for option in product.options_with_values -%}
                 - {{ option }}
               {%- endfor %}
             </div>
