@@ -61,7 +61,7 @@
             data-title="{{product.title}}"
             data-collections="
             {% for collectin in product.collections %}
-              {collection.id}
+              {{ collection.id }}
             {% endfor %}">
             <div class="single-product-inner">
               <div class="prod-img">
