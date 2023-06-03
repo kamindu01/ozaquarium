@@ -1,0 +1,22 @@
+{% paginate collection.products by 12 %}
+  {% for product in collection.products %}
+
+    <span>{{ product.title }}</span>
+
+  {% endfor %}
+
+  {{ paginate | default_pagination: next: 'Older', previous: 'Newer' }}
+{% endpaginate %}
+
+{% schema %}
+  {
+    "name": "Kd Quick Order",
+    "settings": [
+      {
+        "type": "text",
+        "id": "Kd_quick_order_title",
+        "label": "Title"
+      }
+    ]
+  }
+{% endschema %}
