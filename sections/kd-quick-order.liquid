@@ -78,7 +78,7 @@
               <div class="options">
                 {% if product.variants.size > 0 %}
                   {% for varient in product.variants %}
-                    varient.title
+                    {{ varient.title }}
                   {% endfor %}
                 {% endif %}
               </div>
