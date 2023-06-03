@@ -64,9 +64,7 @@
               {{ collection.id }}
             {% endfor %}">
             <div class="single-product-inner">
-              {% for collectin in product.collections %}
-                <p>{{ collection.id }}</p>
-              {% endfor %}"
+              <p>{{ product.collections }}</p>
               <div class="prod-img">
                 <img src="{{product.featured_image | img_url: 'small'}}" alt="">
               </div>
