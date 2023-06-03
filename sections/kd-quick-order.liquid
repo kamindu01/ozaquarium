@@ -59,16 +59,12 @@
           <div
             class="single-product"
             data-title="{{product.title}}"
-            data-collections="
-            {% for collectin in product.collections %}
-              {{ collection.id }}
-            {% endfor %}">
+            data-id="{{product.id}}">
             <div class="single-product-inner">
               {% for collection in product.collections %}
                 {{ collection }}
               {% endfor %}
-              <div
-                class="prod-img">
+              <div class="prod-img">
                 <img src="{{product.featured_image | img_url: 'small'}}" alt="">
               </div>
               <div class="prod-title">
@@ -129,8 +125,6 @@
                   {%- endfor -%}
                 </div>
               {%- endunless -%}
-
-
               {% comment %} product options {% endcomment %}
 
               <div class="prod-button">
