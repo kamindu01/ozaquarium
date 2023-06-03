@@ -56,7 +56,13 @@
     <div class="pagination-wrapper">
       {% paginate collections.all.products by 12 %}
         {% for product in collections.all.products %}
-          <div class="single-product">
+          <div
+            class="single-product"
+            data-title="{{product.title}}"
+            data-collections="
+            {% for collectin in product.collections %}
+              {collection.id}
+            {% endfor %}">
             <div class="single-product-inner">
               <div class="prod-img">
                 <img src="{{product.featured_image | img_url: 'small'}}" alt="">
