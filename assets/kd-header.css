@@ -6,6 +6,10 @@
     padding: 10px 12px !important;
 }
 
+.kd-header .header__submenu a{
+    color: black;
+}
+
 .kd-header .list-menu .dropdown {
     position: relative;
 }
