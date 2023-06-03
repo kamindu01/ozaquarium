@@ -71,14 +71,16 @@
                 <h2>{{ product.title }}</h2>
               </div>
 
-              <div class="options">
+              <div class="options hidden">
                 {% if product.variants.size > 0 %}
-                  <select name="" id="product-varient">
+                  <select
+                    name=""
+                    id="product-varient"
+                    class="product-varient">
                     {% for varient in product.variants %}
                       <option value="{{varient.id}}">{{ varient.title }}</option>
                     {% endfor %}
                   </select>
-
                 {% endif %}
               </div>
 
@@ -113,7 +115,10 @@
                       <label for="ProductSelect-option-{{ forloop.index0 }}">
                         {{ option.name | escape }}
                       </label>
-                      <select id="ProductSelect-{{ forloop.index0 }}" data-index="option{{ forloop.index }}">
+                      <select
+                        onchange="selectProductption(e)"
+                        id="ProductSelect-{{ forloop.index0 }}"
+                        data-index="option{{ forloop.index }}">
                         {%- for value in option.values -%}
                           <option value="{{ value | escape }}"{% if option.selected_value == value %}selected="selected"{% endif %}>
                             {{ value | escape }}
@@ -141,6 +146,15 @@
     </div>
   </div>
 </div>
+
+<script>
+
+  const selectProductption = (e) => {
+    e.preventDefault();
+    let selectedVal = e.target.value;
+    console.log(e.target)
+  }
+</script>
 
 {% schema %}
   {
