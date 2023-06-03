@@ -34,11 +34,11 @@
     padding: 0 10px;
   }
 
-  .quantity {
+  .quantity-wrapper {
     width: 10%;
   }
 
-  .quantity input {
+  .quantity-wrapper input {
     width: 100%;
   }
 
@@ -204,17 +204,22 @@
 
     console.log(e.target)
     let selects = e.target.parentElement.querySelectorAll('select');
-    selects.forEach((slect, key) => {
-      if (key == 0) {
-        varientName += slect.value;
-      } else {
-        varientName += ` / ${
-          slect.value
-        }`;
-      }
-    })
-    console.log(selects)
-    console.log(varientName)
+    selects
+      .forEach((slect, key) => {
+        if (key == 0) {
+          varientName += slect.value;
+        } else {
+          varientName += ` / ${
+            slect.value
+          }`;
+        }
+      })
+      console
+      .log(selects)
+      console
+      .log(varientName)
+      console
+      .log(e.target)
     let varientSelector = e
       .target
       .parentElement
