@@ -39,7 +39,16 @@
   }
 
   .single-selct {
-    padding: 0 6px;
+    padding: 6px;
+  }
+
+  .single-selct label {
+    font-size: 13px;
+  }
+
+  .single-selct select,
+  .single-selct input {
+    padding: 8px;
   }
 
   .prod-button button {
@@ -156,8 +165,12 @@
                 </div>
               </div>
 
+              <div class="quantity">
+                <input type="number" class="quantity">
+              </div>
+
               <div class="prod-button">
-                <button onclick="add_product_to_cart()">Add to cart</button>
+                <button onclick="add_product_to_cart(event)">Add to cart</button>
               </div>
             </div>
           </div>
@@ -203,6 +216,12 @@
       varientSelector.selectedIndex = i;
       break;
     }
+  }
+
+
+  const add_product_to_cart = (e) => {
+    e.preventDefault();
+    console.log(e.target.parentElement.parentElement)
   }
 
 }
