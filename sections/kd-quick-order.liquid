@@ -239,6 +239,16 @@ const add_product_to_cart = (e) => {
     .parentElement
     .parentElement
     .parentElement)
+  let parentElement = e
+    .target
+    .parentElement
+    .parentElement
+    .parentElement;
+  let varientSelect = parentElement.querySelector('.product-varient');
+  let quantityWrapper = parentElement.querySelector('.quantity');
+
+  console.log(varientSelect)
+  console.log(quantityWrapper)
 }
 </script>
 
