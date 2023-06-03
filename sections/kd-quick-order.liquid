@@ -116,7 +116,7 @@
                         {{ option.name | escape }}
                       </label>
                       <select
-                        onchange="selectProductption(e)"
+                        onchange="selectProductption(event)"
                         id="ProductSelect-{{ forloop.index0 }}"
                         data-index="option{{ forloop.index }}">
                         {%- for value in option.values -%}
