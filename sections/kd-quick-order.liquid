@@ -1,16 +1,8 @@
-{% paginate collections.all.products by 30 %}
-  <div id="product-grid" class="grid m30">
-    {%- liquid
-         for product in collections.all.products
-            assign can_purchase = false
-            if product.available
-               assign can_purchase = true
-            endif
-         endfor
-       -%}
-  </div>
-  {% comment %} {% render 'comp-paginator', paginate_object: paginate %} {% endcomment %}
-
+{% paginate collections.all.products by 12 %}
+  {% for product in collections.all.products %}
+    ...
+  {% endfor %}
+  {{ paginate | default_pagination }}
 {% endpaginate %}
 
 {% schema %}
