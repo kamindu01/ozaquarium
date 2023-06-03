@@ -9,7 +9,7 @@
          endfor
        -%}
   </div>
-  {% render 'comp-paginator', paginate_object: paginate %}
+  {% comment %} {% render 'comp-paginator', paginate_object: paginate %} {% endcomment %}
 
 {% endpaginate %}
 
